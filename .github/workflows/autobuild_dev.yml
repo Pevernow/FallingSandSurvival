@@ -179,12 +179,18 @@ jobs:
         uses: svenstaro/upx-action@2.0.1
         with:
           file: build/FallingSandSurvival/Build/lib/libfmodstudio.so.11
+          
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.0
         with:
           name: FallingSandSurvival_linux_x64
           path: build/FallingSandSurvival/Build
+          
+      - name: Test
+        run: |
+          ls -R .
+          
         
       - name: Create Release
         id: create_release
