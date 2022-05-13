@@ -1,5 +1,5 @@
 
-name: AutoBuild - dev
+name: AutoBuild - deved
 
 on:
   push:
